@@ -1,6 +1,7 @@
 import styles from "./page.module.css";
 import { addTodoAction, deleteTodoAction } from "./actions";
 import { getTodos } from "./todos";
+import Link from "next/link";
 
 export default function Home() {
   const todos = getTodos();
@@ -19,7 +20,7 @@ export default function Home() {
             </li>
           ))}
         </ul>
-        <form action={addTodoAction} style={{ marginTop: 16, display: "flex", gap: 8 }}>
+        <form action={addTodoAction} style={{ display: "flex", gap: 8 }}>
           <input
             name="todo"
             placeholder="Add a todo"
@@ -29,6 +30,11 @@ export default function Home() {
           <button type="submit" className={styles.button}>Add</button>
         </form>
       </main>
+      <footer className={styles.footer}>
+        <Link href="/compiler-enhancement">Go to Compiler enhancement page</Link>
+        <Link href="/app-router">Go to App Router page</Link>
+        <Link href="/react-19">Go to React 19 Integration page</Link>
+      </footer>
     </div>
   );
 }

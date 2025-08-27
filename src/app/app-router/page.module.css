@@ -1,0 +1,17 @@
+/* Beautified button style for plain CSS */
+.button {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+.button:hover, .button:focus {
+  background: #1e40af;
+  box-shadow: 0 2px 8px #2563eb33;
+  outline: none;
+}

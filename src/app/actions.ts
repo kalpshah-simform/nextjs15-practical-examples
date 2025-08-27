@@ -24,3 +24,13 @@ export async function submitForm(formData: FormData) {
   if (!name) throw new Error("Name is required");
   console.log("Form submitted with name:", name);
 }
+
+export async function createUser(formData: FormData) {
+  const name = formData.get("name");
+  if (typeof name === "string" && name.trim()) {
+    addTodo(name.trim());
+    revalidatePath("/");
+    return { success: true, name: name.trim() };
+  }
+  return { success: false };
+}
