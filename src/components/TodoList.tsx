@@ -16,7 +16,6 @@ export default function TodoList({
     addOptimisticTodo(todo);
     await addTodoAction(formData); // server action
     setTodos([...todos, todo]);
-    console.log(todos);
   }
 
   return (

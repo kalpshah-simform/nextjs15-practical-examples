@@ -34,6 +34,8 @@ export default function Home() {
         <Link href="/compiler-enhancement">Go to Compiler enhancement page</Link>
         <Link href="/app-router">Go to App Router page</Link>
         <Link href="/react-19">Go to React 19 Integration page</Link>
+        <Link href="/image-component">Go to Image Optimization page</Link>
+        <Link href="/ppr-experimental">Go to PPR Experimental page</Link>
       </footer>
     </div>
   );
